@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Página de suporte técnico ao sistema e-Cidade">
+    <meta name="keyword" content="suporte, e-Cidade, tecnologia, atendimento ao usuário">
+    <meta name="author" content="Chrystian P. Sales">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/email.js" defer></script>
+    <title>Suporte Técnico - e-Cidade</title>
+</head>
+
+<body>
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Solicitação</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Home -->
+    <section id="home">
+        <h1>Central de Suporte e-Cidade</h1>
+        <p>Atendimento dedicado aos usuários do sistema de gestão pública e-Cidade</p>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fas fa-user-cog"></i>
+                <h3>Atendimento ao Usuário</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-tools"></i>
+                <h3>Suporte Técnico</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Intervenções no Sistema</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <h3>Base de Dados e-Cidade</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre">
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Sobre a Central de Suporte</h3>
+                <p>
+                    Nossa equipe atua no atendimento direto aos usuários do sistema e-Cidade, prestando suporte técnico,
+                    esclarecendo dúvidas operacionais, registrando solicitações de melhoria e acompanhando a resolução
+                    de chamados com agilidade e eficiência.
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Objetivo do Suporte</h3>
+                <p>
+                    Garantir o funcionamento ideal do sistema e-Cidade, assegurando que as áreas da Administração
+                    Pública possam executar suas rotinas com segurança, performance e estabilidade.
+                </p>
+                <ul>
+                    <li>Auxílio na utilização dos módulos do sistema;</li>
+                    <li>Resolução de falhas técnicas e operacionais;</li>
+                    <li>Encaminhamento de chamados com prioridade adequada;</li>
+                    <li>Comunicação ativa com os usuários e com a equipe de desenvolvimento;</li>
+                    <li>Documentação das demandas para acompanhamento e melhoria contínua.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos">
+        <div class="grid">
+            <div class="service-card">
+                <h3><i class="fas fa-laptop-medical"></i> Suporte ao Sistema</h3>
+                <ul>
+                    <li>Auxílio no uso dos módulos do e-Cidade</li>
+                    <li>Resolução de erros e mensagens do sistema</li>
+                    <li>Orientações de acesso e navegação</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3><i class="fas fa-database"></i> Apoio à Base de Dados</h3>
+                <ul>
+                    <li>Correções pontuais via SQL</li>
+                    <li>Consultas específicas sob demanda</li>
+                    <li>Restauração de backups quando necessário</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3><i class="fas fa-people-carry"></i> Apoio Funcional</h3>
+                <ul>
+                    <li>Esclarecimento de dúvidas operacionais</li>
+                    <li>Validação de processos nos módulos</li>
+                    <li>Suporte na geração de relatórios</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3><i class="fas fa-user-shield"></i> Acesso e Segurança</h3>
+                <ul>
+                    <li>Criação de usuários no sistema</li>
+                    <li>Permissões e restrições por perfil</li>
+                    <li>Bloqueio e desbloqueio de contas</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3><i class="fas fa-cogs"></i> Manutenção e Atualizações</h3>
+                <ul>
+                    <li>Verificação de atualizações</li>
+                    <li>Instalação de novas versões</li>
+                    <li>Suporte em transições entre módulos</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Solicitação de Suporte Técnico</h2>
+                <p>Utilize o formulário ao lado para registrar sua solicitação de atendimento. Nossa equipe responderá o
+                    mais breve possível.</p>
+                <p><i class="fas fa-envelope"></i> chrystianps@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (69) 98454-2526</p>
+                <p><i class="fab fa-whatsapp"></i> (69) 99909-2526</p>
+                <p><i class="fas fa-map-marker-alt"></i> Porto Velho, RO</p>
+            </div>
+
+            <form id="contactForm">
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required
+                    pattern="[A-Za-zÀ-ú\s]{3,}" title="Mínimo 3 caracteres (apenas letras)">
+
+                <input type="text" id="escola" name="escola" placeholder="Digite nome da escola" required
+                    pattern="[A-Za-zÀ-ú\s\/]{3,}" title="Mínimo 3 caracteres (apenas letras)">
+
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required
+                    title="Exemplo: usuario@provedor.com">
+
+                <select id="tipo" name="tipo" required>
+                    <option value="" disabled selected>Selecione um tipo...</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="solicitacao">Solicitação</option>
+                    <option value="correcao">Correção</option>
+                    <option value="melhoria">Melhoria</option>
+                </select>
+
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva seu problema ou solicitação"
+                    required minlength="10" title="Mínimo 10 caracteres"></textarea>
+
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="status" aria-live="polite"></p>
+        </div>
+    </section>
+
+</body>
+
+</html>
