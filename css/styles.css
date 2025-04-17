@@ -260,6 +260,24 @@ textarea:valid {
   border-color: #00c851;
 }
 
+/* ADICIONE ISSO NO SEU CSS EXISTENTE */
+input[type="text"],
+input[type="email"],
+select {
+  height: 45px; /* Altura fixa igual para todos */
+  line-height: 45px; /* Alinhamento vertical perfeito */
+  padding: 0 15px; /* Padding horizontal ajustado */
+  font-size: 1rem;
+  box-sizing: border-box; /* Mantém medidas exatas */
+}
+
+/* Mantenha o textarea com estilo próprio */
+textarea {
+  padding: 15px;
+  min-height: 150px;
+  resize: vertical;
+}
+
 /* ============== RESPONSIVIDADE ============== */
 @media (max-width: 1200px) {
   #home h1 {
