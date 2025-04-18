@@ -343,6 +343,7 @@ textarea {
   }
 
   .contact-info {
+    flex: 1 1 300px; /* inclui para teste */
     order: -1;
     padding: 2rem;
     text-align: center;
