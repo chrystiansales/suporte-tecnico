@@ -1,0 +1,182 @@
+/* HOME */
+#home {
+  background: var(--primary-bg);
+  color: var(--primary-color);
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.5rem;
+}
+
+#home p {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skill-item {
+  background: var(--skill-item-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-item i {
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+/* SOBRE */
+#sobre {
+  background: var(--primary-color);
+}
+
+.timeline {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  background: var(--timeline-item-bg);
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-bg);
+  box-shadow: var(--box-shadow);
+}
+
+/* SERVIÇOS */
+#servicos .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: var(--service-card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+}
+
+.service-card:hover {
+  background: var(--service-card-hover-bg);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* CONTATO */
+#contato {
+  background: var(--contact-bg);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-info {
+  background: var(--service-card-bg);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info p {
+  margin: 1.2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* FORMULÁRIOS */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+input,
+textarea,
+select {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 15px;
+}
+
+textarea {
+  padding: 15px;
+  min-height: 150px;
+  resize: vertical;
+}
+
+button {
+  background: var(--primary-bg);
+  color: var(--primary-color);
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+select:invalid {
+  border-color: red;
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: #ff4444;
+}
+
+input:valid,
+textarea:valid {
+  border-color: #00c851;
+}
+
+#status {
+  font-size: 0.9em;
+  margin-top: 10px;
+  transition: opacity 0.3s;
+}

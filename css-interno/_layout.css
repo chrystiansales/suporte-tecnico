@@ -1,0 +1,35 @@
+nav {
+  background: var(--secondary-bg);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+nav ul li a:hover {
+  background: var(--hover-bg);
+}
+
+section {
+  padding: 7rem 2rem 3rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
