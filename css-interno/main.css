@@ -1,6 +1,6 @@
-@import url("./_variables.css");
-@import url("./_base.css");
-@import url("./_layout.css");
-@import url("./_components.css");
-@import url("./_responsive.css");
-@import url("./_animations.css");
+@import url("./variables.css");
+@import url("./base.css");
+@import url("./layout.css");
+@import url("./components.css");
+@import url("./responsive.css");
+@import url("./animations.css");
