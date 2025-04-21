@@ -18,58 +18,6 @@
   }
 }
 
-@media (max-width: 1080px) {
-  /* Ajuste na tipografia */
-  #home h1 {
-    font-size: 2.5rem;
-  }
-
-  #home p {
-    font-size: 1.1rem;
-  }
-
-  /* Melhorando espaçamento de seções */
-  section {
-    padding: 5rem 1.5rem 2rem;
-  }
-
-  /* Refinando a grade de habilidades */
-  .skills-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
-  /* Ajustando layout de contato */
-  .contact-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 800px;
-  }
-
-  /* Navegação aprimorada */
-  nav ul {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: center;
-    padding: 0 1rem;
-    white-space: nowrap;
-    scrollbar-width: none;
-  }
-
-  nav ul::-webkit-scrollbar {
-    display: none;
-  }
-
-  nav ul li {
-    flex: 0 0 auto;
-  }
-
-  nav ul li a {
-    font-size: 1rem;
-    padding: 0.7rem 1.2rem;
-  }
-}
-
 @media (max-width: 992px) {
   /* Ajustando grid para telas médias */
   .skills-grid {
